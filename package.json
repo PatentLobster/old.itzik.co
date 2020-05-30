@@ -1,0 +1,21 @@
+{
+  "name": "itzik-co",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/remark-prismjs": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/vue-remark": "^0.2.1",
+    "buefy": "^0.8.20",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "@gridsome/transformer-remark": "^0.6.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

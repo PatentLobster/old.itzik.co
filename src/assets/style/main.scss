@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--bg);
+  text-align: left;
+  color: #f8f9fa;
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: var(--grad);
+}
+
+#app {
+  color: var(--body-color);
+}
+
+a {
+  color: var(--body-color);
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #293347;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E6ECF8;
+}
+
+
+// Skills table
+
+.liskill {
+  display: inline;
+  white-space: nowrap;
+  padding-right: 0.2rem;
+}
+
+.liskill:before {
+  content: "  • ";
+}
+
+.liskill.nob:after {
+  content: none;
+}
+
+//.skillh{
+//  padding-top: 1rem;
+//}
+.cskill {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cskill li {
+  list-style-type: none;
+  padding: 0.2rem;
+}
+
+.rskill .cskill:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+.iskill {
+  font-size: 64px !important;
+  color: rgba(255, 255, 255, 0.026);
+  text-shadow: none;
+}
+
+.iskill::before {
+  font-size: 64px;
+  background: linear-gradient(150deg, #b054d8 0, #364e86 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: initial; /* reset Font Awesome's display:inline-block */
+}
+
+
+.rskill {
+  background-color: var(--bg-teritary);
+  border-radius: 15px;
+  //box-shadow: 0 5px 5px 0 rgba(10, 10, 10, 0.5),0 0 0 1px #131418;
+  box-shadow: var(--bshadow);
+  line-height: 1.2rem;
+}
+
+.htb div {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cskill {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cskill {
+    border-bottom: 0px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+  }
+}
+
+// Footer
+
+@media only screen and (min-width: 768px) {
+  .madeby {
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .madeby {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+  .socalinks {
+    margin-bottom: 2rem;
+  }
+}
+
+footer {
+  background-color: var(--bg-teritary);
+  //height: 5rem;
+  display: block;
+  position: relative;
+  bottom: 0;
+}
+footer .container,.row {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.socalinks {
+  text-align: center !important;
+  font-size: 2rem;
+}
+
+.socalinks a {
+  margin-left: 10px;
+  position: relative;
+  top: 15px
+}
+
+.viewn {
+  margin-top: 0.8rem;
+}
+
+.fb:hover {
+  color: #3B5998 !important;
+  text-decoration: none;
+}
+
+.fb:active {
+  color: #3B5998 !important;
+  text-decoration: none;
+}
+
+.yt:hover {
+  color: #AA000E !important;
+  text-decoration: none;
+}
+
+.yt:active {
+  color: #AA000E !important;
+  text-decoration: none;
+}
+
+.lin:hover {
+  color: #4875B4 !important;
+  text-decoration: none;
+}
+
+.lin:active {
+  color: #4875B4 !important;
+  text-decoration: none;
+}
