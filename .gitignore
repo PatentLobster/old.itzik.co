@@ -1,6 +1,6 @@
-
+.idea/
 # ETC
-.temp/
+*/.temp/
 
 # Logs
 logs
