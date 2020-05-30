@@ -1,5 +1,4 @@
-# IDE
-.idea/
+
 # ETC
 .temp/
 
@@ -107,3 +106,5 @@ dist
 
 # TernJS port file
 .tern-port
+.idea/workspace.xml
+.idea/
