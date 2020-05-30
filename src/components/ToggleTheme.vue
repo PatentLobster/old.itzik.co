@@ -70,7 +70,7 @@ export default {
     border: 0;
     color: currentColor;
     cursor: grabbing;
-    user-select: none; 
+    user-select: none;
   &:hover {
     opacity: .8;
     animation-name: lel;
