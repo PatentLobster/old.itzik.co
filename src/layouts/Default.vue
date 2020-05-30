@@ -4,6 +4,7 @@
         <div class="content">
             <slot />
         </div>
+        <Penguin />
         <Footer />
     </div>
 </template>
@@ -25,10 +26,11 @@
 <script>
     import Header from "./partials/Header";
     import Footer from "./partials/Footer";
+    import Penguin from "../components/Penguin";
 
     export default {
         props: ['primary-bg'],
-        components: {Header, Footer},
+        components: {Penguin, Header, Footer},
         computed: {
             mainClass() {
                 let classes = [];
