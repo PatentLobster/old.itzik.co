@@ -18,7 +18,7 @@ My skills are broad; from hardware to software, from the front end to the back e
     <div class="row m-5 rskill">
         <div class="col-md-4 cskill">
             <i class="iskill fa fa-code"></i>
-            <h1 class="hskill"> Dev Skills </h1>
+            <h3 class="hskill"> Dev Skills </h3>
             
             <p class="skillp">I like to code things from scratch and enjoy bringing ideas to life.</p>
             <h4 class="skillh">Languages I speak:</h4>
@@ -29,20 +29,17 @@ My skills are broad; from hardware to software, from the front end to the back e
             <li class="liskill">CSS3</li>
             <li class="liskill">Sass</li>
             <li class="liskill">JS</li>
-            
             <h4 class="skillh">Backend sauce:</h4>
             <li class="liskill">Apache</li>
             <li class="liskill">Nginx</li>
             <li class="liskill">Docker</li>
             <li class="liskill">Kubernetes</li>
             <li class="liskill">FireBase</li>
-            
             <h4 class="skillh">Databases:</h4>
              <li class="liskill">Postgresql</li>
             <li class="liskill">mongoDB</li>
             <li class="liskill">ElasticSearch</li>
             <li class="liskill">MySql</li>
-            <li class="liskill">GraphQL 🤷‍♂️</li>
             <h4 class="skillh">Frameworks:</h4>
 			<li class="liskill">React</li>
             <li class="liskill">Vue</li>
@@ -60,7 +57,6 @@ My skills are broad; from hardware to software, from the front end to the back e
             <li class="liskill">Joomala</li>
             <li class="liskill">DjangoCMS</li>
             <h4 class="skillh">IOT:</h4>
-            
             <li class="liskill">Embedded Linux</li>
             <li class="liskill">Arduino</li>
             <li class="liskill">ESP32</li>
@@ -76,7 +72,7 @@ My skills are broad; from hardware to software, from the front end to the back e
         </div>
 		<div class="col-md-4 cskill">
         	<i class="iskill fa fa-shield"></i>
-            <h1 class="hskill"> Security Skills </h1>
+            <h3 class="hskill"> Security Skills </h3>
             <p class="skillp"> I love hacking new systems and to find security vulnerabilities. </p>
             <h4 class="skillh">Sec.Ops:</h4>
             <li>Penetration testing</li>
@@ -106,7 +102,7 @@ My skills are broad; from hardware to software, from the front end to the back e
         </div>
         <div class="col-md-4 cskill">
         	<i class="iskill fa fa-flask"></i>
-            <h1 class="hskill"> Other Skills </h1>
+            <h3 class="hskill"> Other Skills </h3>
             <p class="skillp">I love to expand my skillset and to keep it diverse. </p>
             
             <h4 class="skillh">Electronics:</h4>
@@ -115,8 +111,12 @@ My skills are broad; from hardware to software, from the front end to the back e
             <p>I enjoy discovering new signals, receiving data from satellites and building my own antennas. As well as reversing signals and modulations.</p>
             <h4 class="skillh">Drones:</h4>
             <p>there is nothing I love to do more than building, modding and flying my own drones.</p>
+            <h4 class="skillh">Design:</h4>
+            <p>I got moderate skills on the Adobe suite, Figma and Sketch.</p>
+            <p>which I use to bring some SWAG to my code.</p>
         </div>
     </div>
 </div>
+
 
 

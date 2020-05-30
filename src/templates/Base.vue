@@ -20,11 +20,6 @@
     }
 </script>
 <style scoped type="scss">
-    .page-title {
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: 500;
-        color:var(--body-color);
-    }
+
 
 </style>

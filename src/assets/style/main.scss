@@ -14,6 +14,12 @@ body {
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  html,body {
+    overflow-x: hidden;
+  }
+}
+
 .content {
   min-height: 75vh;
 }
@@ -30,6 +36,12 @@ header {
   margin-bottom: 2rem;
 }
 
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color:var(--body-color);
+}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -88,8 +100,17 @@ header {
   -webkit-background-clip: text;
   display: initial; /* reset Font Awesome's display:inline-block */
 }
-
-
+.rskill h3 {
+  font-size: 2rem;
+}
+.rskill h4 {
+  font-size: 1.5rem;
+}
+.rskill h2,
+.rskill h3,
+.rskill h4 {
+  font-family: "Bad Script";
+}
 .rskill {
   background-color: var(--bg-teritary);
   border-radius: 15px;
@@ -136,6 +157,24 @@ header {
   }
 }
 
+.madeby {
+  font-size: 1.5rem;
+  //margin: 0;
+  //padding: 0;
+  //line-height: 1.4rem;
+}
+
+.madeby .vue {
+  width: 22px;
+}
+.madeby .itzik{
+  font-size: 2rem;
+  font-family: 'Gochi Hand', cursive;
+  display: inline-blockblock;
+  //line-height: 2rem;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
 footer {
   background-color: var(--bg-teritary);
   //height: 5rem;
@@ -158,14 +197,15 @@ footer .container,.row {
 .socalinks a {
   margin-left: 10px;
   position: relative;
-  top: 15px
+  top: 25px
 }
 
 .viewn {
   margin-top: 0.8rem;
 }
 .git {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  padding: 0;
 }
 .fb:hover {
   color: #3B5998 !important;

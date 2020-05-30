@@ -55,5 +55,9 @@
     .penguin {
     text-align: left;
     }
+    .penguin img {
+        position: relative;
+        bottom: -15px;
+    }
     /*style="transform: translateX({{this.posX}}) rotateY({{this.direction}}));"*/
 </style>
