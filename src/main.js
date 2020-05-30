@@ -24,6 +24,17 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap-grid.min.css',
   });
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://s.pageclip.co/v1/pageclip.css',
+  });
+
+
+  head.script.push({
+    src: 'https://s.pageclip.co/v1/pageclip.js',
+    body: true
+  })
+
 
 
 }

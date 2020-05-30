@@ -4,7 +4,19 @@
     <h2>Hey! 🖐</h2>
     <h3>Can't wait to hear from you.</h3>
     <h4>you can mail me at <g-link href="mailto:contact@itzik.co">contact@itzik.co</g-link> or just use the form below.</h4>
-    <h2>(WIP)</h2>
+    <div class="panel">
+      <div class="state"><br><i class="fa fa-envelope-square"></i><br><h1>Contact</h1></div>
+      <div class="form">
+        <form action="https://send.pageclip.co/4zSBzG3af0NkVOL1Z9lcA01mrKEJdSoB" class="pageclip-form" method="post">
+          <input type="text" name="name" placeholder="Chuck Norris" />
+          <input type="email" name="email" placeholder="your@email.com" />
+          <textarea name="content"></textarea>
+          <button type="submit" class="pageclip-form__submit send">
+            <span>Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
   </Layout>
 </template>
 
@@ -16,3 +28,143 @@ export default {
   }
 }
 </script>
+
+<style type="scss">
+  .panel *:focus {
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  /*padding: 3px 0px 3px 3px;*/
+  /*margin: 5px 1px 3px 0px;*/
+  border: 1px solid rgba(81, 203, 238, 1);
+  }
+  .panel {
+    width: 400px;
+    /*height: 500px;*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /*-webkit-box-shadow: 0 0 10px black;*/
+    /*-moz-box-shadow: 0 0 10px black;*/
+    /*box-shadow: 0 0 10px black;*/
+    box-shadow: var(--bshadow);
+    /*background: #141519;*/
+    background: var(--bg-teritary);
+    color: var(--body-color);
+    margin: 100px auto;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .panel .state {
+    margin-top: 5px;
+    width: 100%;
+    height: 155px;
+    /*color: white;*/
+    color: var(--body-color);
+    font-size: 20px;
+  }
+  .panel .state i {
+    font-size: 40px;
+  }
+  .panel .state i {
+    /*font-size: 25px;*/
+    /*color: white;*/
+    color: var(--body-color);
+    line-height: 33px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+  }
+  .panel .state h2 {
+    font-weight: 400;
+  }
+  .panel .form {
+    width: 340px;
+    margin: 5px auto;
+  }
+  .panel .send {
+    height: 45px;
+    width: 100%;
+    background-color: #8bc34a;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border: 0;
+    border-radius: 45px;
+    position: relative;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+    cursor: pointer;
+  }
+  .panel .send:active {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  .panel .send:hover {
+    background-color: #599b2d;
+  }
+  .panel input {
+    /*background-color: #22232a;*/
+    background: var(--bg);
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-size: 15px;
+    height: 45px;
+    color: var(--body-color);
+    border: none;
+    padding-left: 15px;
+    width: -webkit-calc(100% - 15px);
+    width: -moz-calc(100% - 15px);
+    width: calc(100% - 15px);
+    margin-bottom: 10px;
+  }
+  .panel input[placeholder] {
+    /*color: #656d79;*/
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .panel textarea {
+    /*background-color: #22232a;*/
+    color: var(--body-color);
+    background: var(--bg);
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 200px;
+    border: none;
+    padding-left: 15px;
+    width: -webkit-calc(100% - 15px);
+    width: -moz-calc(100% - 15px);
+    width: calc(100% - 15px);
+    margin-bottom: 10px;
+  }
+  .panel .fack {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .panel .fack i.fa {
+    text-decoration: none;
+    /*color: #fff;*/
+    color: var(--body-color);
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .panel .fack a:link {
+    color: #616973;
+  }
+  .panel .fack a:visited {
+    color: #555c65;
+  }
+
+</style>
