@@ -69,12 +69,30 @@ export default {
     background-color: transparent;
     border: 0;
     color: currentColor;
-    cursor: pointer;
+    cursor: grabbing;
   &:hover {
-    opacity: .8
+    opacity: .8;
+    animation-name: lel;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
   &:focus {
     outline: none;
   }
 }
+
+  @keyframes lel {
+    0% {
+      cursor: grabbing;
+    }
+    49% {
+      cursor: grab;
+    }
+    50% {
+      cursor: grabbing;
+    }
+    100% {
+      cursor: grab;
+    }
+  }
 </style>

@@ -11,8 +11,12 @@ body {
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: var(--grad);
+  height: 100%;
 }
 
+.content {
+  min-height: 75vh;
+}
 #app {
   color: var(--body-color);
 }
@@ -138,6 +142,7 @@ footer {
   display: block;
   position: relative;
   bottom: 0;
+  width: 100%;
 }
 footer .container,.row {
   margin-top: 0;
@@ -159,7 +164,9 @@ footer .container,.row {
 .viewn {
   margin-top: 0.8rem;
 }
-
+.git {
+  margin-top: 0.5rem;
+}
 .fb:hover {
   color: #3B5998 !important;
   text-decoration: none;
