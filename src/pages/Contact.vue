@@ -24,7 +24,7 @@
 
 export default {
   metaInfo: {
-    title: 'Contact Me'
+    title: 'Contact Me.'
   }
 }
 </script>

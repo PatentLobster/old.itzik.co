@@ -10,6 +10,7 @@
         markdownPage(id: $id) {
             title
             content
+            excerpt
         }
     }
 </page-query>
@@ -17,6 +18,12 @@
 <script>
     export default {
         name: "Base.vue",
+        title: "this.$page.markdownPage.title",
+        metaInfo() {
+            return {
+                title: this.$page.markdownPage.title
+            }
+        }
     }
 </script>
 <style scoped type="scss">

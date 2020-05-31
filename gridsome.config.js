@@ -5,7 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'itzik.co',
+  siteName: 'Itzik',
+  siteUrl: 'https://itzik.co',
+  siteDescription: 'Itzik Sokolov. A Developer, Hacker, Maker, Gamer, Pilot.',
+  icon: {
+    favicon: './src/assets/img/ico.png',
+    touchicon: './src/assets/img/ico.png'
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',

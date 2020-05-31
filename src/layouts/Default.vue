@@ -1,9 +1,11 @@
 <template>
     <div class="layout" dark>
         <Header />
+        <transition name="fade" appear >
         <div class="content">
-            <slot />
+                <slot />
         </div>
+        </transition>
         <Penguin />
         <Footer />
     </div>
@@ -12,12 +14,25 @@
 
 
 <style>
-
     .layout {
         /*max-width: 760px;*/
         margin: 0 auto;
         text-align: center;
     }
+    .fade-enter-active {
+        animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s; /* don't forget to set a duration! */
+    }
+    .fade-leave-active {
+        animation: fadeOutDown; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 0.5s; /* don't forget to set a duration! */
+    }
+
+    /*.fade-enter {*/
+    /*    opacity: 0;*/
+    /*}*/
+
+
 
 
 </style>
