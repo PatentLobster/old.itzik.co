@@ -7,11 +7,22 @@
     <div class="panel">
       <div class="state"><br><i class="fa fa-envelope-square"></i><br><h1>Contact</h1></div>
       <div class="form">
-        <form action="https://send.pageclip.co/4zSBzG3af0NkVOL1Z9lcA01mrKEJdSoB" class="pageclip-form" method="post">
+        <form
+                @submit="checkForm"
+                action="https://send.pageclip.co/4zSBzG3af0NkVOL1Z9lcA01mrKEJdSoB"
+                class="pageclip-form"
+                method="post"
+        >
+          <p v-if="errors.length">
+            <b>Please correct the following error(s):</b>
+          <ul>
+            <li v-for="error in errors">{{ error }}</li>
+          </ul>
+          </p>
           <input type="text" name="name" placeholder="Chuck Norris" />
           <input type="email" name="email" placeholder="your@email.com" />
           <textarea name="content"></textarea>
-          <button type="submit" class="pageclip-form__submit send">
+          <button type="submit" value="Submit" class="pageclip-form__submit send">
             <span>Send</span>
           </button>
         </form>
@@ -25,6 +36,27 @@ export default {
   metaInfo: {
     title: 'Contact Me.',
     script: [{ key: 'script', src: 'https://s.pageclip.co/v1/pageclip.js', body: true, type: 'text/javascript' },]
+  },
+  data: () => {
+    return {
+    errors: [],
+    name: [],
+    email: [],
+    content: [],
+    }
+  },
+  methods: {
+    checkForm(e) {
+      if (!this.name || this.name.length >= 0)
+        this.errors.push("Name required.");
+      if (!this.email || this.name.length >= 0)
+        this.errors.push("Email required.");
+      if (!this.content)
+        this.errors.push("Message body required.");
+      if (this.content.length < 50)
+        this.errors.push("Message body min length is 50.");
+      e.preventDefault();
+    }
   }
 }
 </script>
