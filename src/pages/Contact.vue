@@ -21,35 +21,29 @@
 </template>
 
 <script>
-
 export default {
   metaInfo: {
-    title: 'Contact Me.'
+    title: 'Contact Me.',
+    script: [{ key: 'script', src: 'https://s.pageclip.co/v1/pageclip.js', body: true, type: 'text/javascript' },]
   }
 }
 </script>
 
-<style type="scss">
+<style scoped type="scss">
+  @import "https://s.pageclip.co/v1/pageclip.css";
   .panel *:focus {
-      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  /*padding: 3px 0px 3px 3px;*/
-  /*margin: 5px 1px 3px 0px;*/
-  border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
   }
   .panel {
     width: 400px;
-    /*height: 500px;*/
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    /*-webkit-box-shadow: 0 0 10px black;*/
-    /*-moz-box-shadow: 0 0 10px black;*/
-    /*box-shadow: 0 0 10px black;*/
     box-shadow: var(--bshadow);
-    /*background: #141519;*/
     background: var(--bg-teritary);
     color: var(--body-color);
-    margin: 100px auto;
+    margin: 50px auto;
     padding-bottom: 1rem;
     text-align: center;
   }
@@ -57,7 +51,6 @@ export default {
     margin-top: 5px;
     width: 100%;
     height: 155px;
-    /*color: white;*/
     color: var(--body-color);
     font-size: 20px;
   }
@@ -65,8 +58,6 @@ export default {
     font-size: 40px;
   }
   .panel .state i {
-    /*font-size: 25px;*/
-    /*color: white;*/
     color: var(--body-color);
     line-height: 33px;
     height: 30px;
@@ -111,7 +102,6 @@ export default {
     background-color: #599b2d;
   }
   .panel input {
-    /*background-color: #22232a;*/
     background: var(--bg);
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
@@ -127,13 +117,11 @@ export default {
     margin-bottom: 10px;
   }
   .panel input[placeholder] {
-    /*color: #656d79;*/
     color: var(--body-color);
     font-size: 15px;
     font-weight: 500;
   }
   .panel textarea {
-    /*background-color: #22232a;*/
     color: var(--body-color);
     background: var(--bg);
     -webkit-border-radius: 45px;
@@ -154,7 +142,6 @@ export default {
   }
   .panel .fack i.fa {
     text-decoration: none;
-    /*color: #fff;*/
     color: var(--body-color);
     vertical-align: middle;
     font-size: 20px;
@@ -166,5 +153,4 @@ export default {
   .panel .fack a:visited {
     color: #555c65;
   }
-
 </style>
