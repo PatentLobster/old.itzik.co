@@ -47,9 +47,9 @@ export default {
   },
   methods: {
     checkForm(e) {
-      if (!this.name || this.name.length >= 0)
+      if (!this.name || this.name.length < 1)
         this.errors.push("Name required.");
-      if (!this.email || this.name.length >= 0)
+      if (!this.email || this.name.length < 1)
         this.errors.push("Email required.");
       if (!this.content)
         this.errors.push("Message body required.");
