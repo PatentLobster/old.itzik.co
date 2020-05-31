@@ -19,9 +19,9 @@
             <li v-for="error in errors">{{ error }}</li>
           </ul>
           </p>
-          <input type="text" name="name" placeholder="Chuck Norris" />
-          <input type="email" name="email" placeholder="your@email.com" />
-          <textarea name="content"></textarea>
+          <input type="text" name="name" placeholder="Chuck Norris" v-model="name"/>
+          <input type="email" name="email" placeholder="your@email.com" v-model="email"/>
+          <textarea name="content" v-model="content"></textarea>
           <button type="submit" value="Submit" class="pageclip-form__submit send">
             <span>Send</span>
           </button>
@@ -47,15 +47,21 @@ export default {
   },
   methods: {
     checkForm(e) {
-      if (!this.name || this.name.length < 1)
+      this.errors = [];
+      if (!this.name || this.name.length <= 2)
         this.errors.push("Name required.");
-      if (!this.email || this.name.length < 1)
-        this.errors.push("Email required.");
+      if (!this.email || !this.validEmail(this.email))
+        this.errors.push("Valid Email required.");
       if (!this.content)
         this.errors.push("Message body required.");
       if (this.content.length < 50)
         this.errors.push("Message body min length is 50.");
-      e.preventDefault();
+      if(this.errors)
+        e.preventDefault();
+    },
+    validEmail: function (email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     }
   }
 }
