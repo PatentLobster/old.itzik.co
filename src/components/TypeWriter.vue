@@ -80,6 +80,7 @@
     .output {
         color: #e83e8c;
         font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-weight: 400;
         font-size: 1.2rem;
         text-align: center;
     }

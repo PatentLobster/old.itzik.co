@@ -10,7 +10,7 @@ export default function (Vue, {router, head, isClient}) {
     // Google Fonts
     head.link.push({
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Bad+Script&family=Gochi+Hand&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans:wght@200;300;400&display=swap',
     });
 
     // FontAwesome
