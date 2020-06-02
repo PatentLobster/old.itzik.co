@@ -36,7 +36,7 @@
                         this.direction = "0";
                     }
                 }
-                setTimeout(this.walk, 10);
+                requestAnimationFrame(this.walk);
             }
         },
         mounted() {
