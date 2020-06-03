@@ -8,7 +8,6 @@
       <div class="state"><br><i class="fa fa-envelope-square"></i><br><h1>Contact</h1></div>
       <div class="form">
         <form
-                @submit="checkForm"
                 action="https://send.pageclip.co/4zSBzG3af0NkVOL1Z9lcA01mrKEJdSoB"
                 class="pageclip-form"
                 method="post"
