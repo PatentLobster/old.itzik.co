@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
+  //overflow-y: hidden;
+  overflow-x: hidden;
   font-family: 'Josefin Sans', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -57,6 +59,42 @@ header {
   background-color: #E6ECF8;
 }
 
+// Find Me on:
+  .social-dev::before {
+    width: 100vw;
+    z-index: -1;
+
+    overflow-y: hidden;
+    content: "";
+    height: 12rem;
+    background: var(--grad);
+    opacity: 35%;
+    position: absolute;
+    left: 0;
+  }
+.social-dev {
+  z-index: 1;
+  width: 100%;
+  //margin: 0 auto;
+  height: 12rem;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  left: 0;
+  //background: var(--bg-transparent);
+  h3{ font-size: 2rem; line-height: 0; padding-top: 0.5rem}
+  ul {
+    display: inline-flex;
+    li {
+      list-style: none;
+      margin: 0 1rem;
+      //display: inline-flex;
+        a {
+          font-size: 2rem;
+        }
+    }
+  }
+}
 
 // Skills table
 

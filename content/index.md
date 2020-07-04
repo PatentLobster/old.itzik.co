@@ -97,8 +97,7 @@ My skills are broad; from hardware to software, from the front end to the back e
             <li>BinWalk</li>
             <li>VMs</li>
             <li>Private Scripts, And a lot more ;)</li>
-            <h4 class="skillh">HTB Profile:</h4>
-            <li class="htb"><a href="https://www.hackthebox.eu/home/users/profile/127846"><g-image src="https://www.hackthebox.eu/badge/image/127846" alt="Hack The Box" /></a></li>
+            
         </div>
         <div class="col-md-4 cskill">
         	<i class="iskill fa fa-flask"></i>
@@ -116,6 +115,24 @@ My skills are broad; from hardware to software, from the front end to the back e
             <p>which I use to bring some SWAG to my code.</p>
         </div>
     </div>
+    
+    <div class="social-dev">
+        <h3> Find me on: </h3>
+        <ul>
+        <li class="htb"><a href="https://www.hackthebox.eu/home/users/profile/127846"><g-image src="https://www.hackthebox.eu/badge/image/127846" alt="Hack The Box" /></a></li>
+        <li class="codewars"><a href="https://www.codewars.com/users/PatentLobster"><g-image src="https://www.codewars.com/users/PatentLobster/badges/large" alt="CodeWars" /></a></li>
+        <li class="github">
+        <a href="https://github.com/PatentLobster">
+        GitHub 
+        </a>
+        </li>
+        </ul>
+        </div>
+        
+        </li>
+    
+    </div>
+    
 </div>
 
 
