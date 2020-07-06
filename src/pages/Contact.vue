@@ -12,7 +12,7 @@
     >
 
       <div class="error-message">
-        <p v-show="!email.valid">Oh, please enter a valid email address.</p>
+        <p v-show="!email.valid && email.value !== ''">Oh, please enter a valid email address.</p>
       </div>
 
       <fieldset>
@@ -36,7 +36,9 @@
           <label class="label" for="textarea">Message</label>
           <textarea class="message" name="textarea" id="textarea" required=""
                     v-model="message.text"
-                    :maxlength="message.maxlength"></textarea>
+                    :maxlength="message.maxlength"
+                    :minlength="message.minlength">
+          </textarea>
           <span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span>
         </div>
         <div>
@@ -64,12 +66,12 @@ export default {
       name: "",
       email: {
         value: "",
-        valid: true
+        valid: false
       },
       message: {
         text: ``,
         maxlength: 1000,
-        minLength: 50
+        minlength: 50
       },
       submitted: false
     };
