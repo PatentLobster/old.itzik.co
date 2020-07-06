@@ -107,7 +107,7 @@ header {
   //text-align: left;
 }
 .liskill {
-  display: inline;
+  display: inline-block;
   white-space: nowrap;
   padding-right: 0.2rem;
 }
@@ -131,7 +131,7 @@ header {
 .cskill li {
   list-style-type: none;
   padding: 0.2rem;
-  display: inline-block;
+  display: block;
 }
 
 .rskill .cskill:last-child {
