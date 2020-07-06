@@ -68,7 +68,7 @@ header {
     content: "";
     height: 12rem;
     background: var(--grad);
-    opacity: 35%;
+    opacity: 25%;
     position: absolute;
     left: 0;
   }
@@ -96,8 +96,16 @@ header {
   }
 }
 
-// Skills table
+.box {
+  max-width: 50%;
+  margin: 2rem auto;
+  text-align: left;
+}
 
+// Skills table
+.skillp {
+  //text-align: left;
+}
 .liskill {
   display: inline;
   white-space: nowrap;
@@ -134,10 +142,13 @@ header {
   font-size: 64px !important;
   color: rgba(255, 255, 255, 0.026);
   text-shadow: none;
+  //text-align: center !important;
 }
 
 .iskill::before {
   font-size: 64px;
+  //text-align: center !important;
+  margin: 0 auto;
   background: linear-gradient(150deg, #b054d8 0, #364e86 100%);
   background-clip: text;
   -webkit-background-clip: text;

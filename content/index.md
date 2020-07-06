@@ -5,7 +5,7 @@ excerpt: Lorem Ipsum is simply dummy text.
 
 import TypeWriter from '../src/components/TypeWriter.vue'
 <TypeWriter />
-
+<div class="box">
 Hey My name is Itzik (Musli) Sokolov Paz I'm a Computer science student @ The open university of Israel.
 
 I love programming, learning, (re)inventing, hacking, traveling, gaming, flying FPV drones and Linux.
@@ -13,7 +13,7 @@ I love programming, learning, (re)inventing, hacking, traveling, gaming, flying 
 I've always been passionte and enthusiastic for technology and computers, and I have over of 12 years experince in programming for recrational use and about 5 of them for professional use.
 
 My skills are broad; from hardware to software, from the front end to the back end, from UX to UI, from idea to reality. 😉
-
+</div>
 <div class="container">
     <div class="row m-5 rskill">
         <div class="col-md-4 cskill">
