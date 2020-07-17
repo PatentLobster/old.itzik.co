@@ -2,7 +2,7 @@
     <div class="layout" dark>
         <Header />
         <transition name="fade" appear >
-        <div class="content">
+        <div class="container">
                 <slot />
         </div>
         </transition>
