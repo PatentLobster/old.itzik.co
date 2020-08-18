@@ -59,6 +59,46 @@ header {
   background-color: #E6ECF8;
 }
 
+// Sticky cards
+.card:first-child{
+  margin-top: 20px;
+}
+
+@for $i from 1 through 8 {
+  .card:nth-child(#{$i}n) {
+    top: $i * 40px!important;
+    //position: sticky;
+  }
+}
+
+@for $i from 1 through 8 {
+  .card:nth-child(#{$i}n) {
+    h2{
+      padding-left: $i * 10% ;
+    }
+  }
+}
+
+.card:nth-child(2) {
+      background: linear-gradient(90deg,#41b782,#86d169)!important;
+}
+
+.card:nth-child(3) {
+  //background: linear-gradient(#8269be,#835ec2)!important;
+ //background:linear-gradient(#47133c, #4e1277)!important;
+  background: linear-gradient(#a4508b 0%, #5f0a87 74%)!important;
+  color:white!important;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(#041830,#080117)!important;
+  color:white!important;
+}
+
+.grid {
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+}
 // Find Me on:
   .social-dev::before {
     width: 100vw;
@@ -102,22 +142,6 @@ header {
 }
 
 // Skills table
-.skillp {
-  //text-align: left;
-}
-.liskill {
-  display: inline-block!important;
-  white-space: nowrap;
-  padding-right: 0.2rem;
-}
-
-.liskill:before {
-  content: "  • ";
-}
-
-.liskill.nob:after {
-  content: none;
-}
 
 //.skillh{
 //  padding-top: 1rem;
@@ -125,13 +149,43 @@ header {
 .cskill {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
 
-.cskill li {
+
+  ul {
+    padding: 0;
+  }
+  li {
   list-style-type: none;
   padding: 0.2rem;
-  display: block;
+
+  margin: 0 auto;
+  display:  block;
+  text-align: center;
+    &::before{
+      //content: "⚜";
+      //padding-right: 4rem;
+      position: relative;
+
+    }
+  }
+
 }
+
+.rskill .cskill:first-child {
+    li {
+  list-style-type: none;
+  padding: 0.1rem;
+    margin: 0 auto;
+  display: inline-block;
+    &::before{
+      content: "⚓";
+      padding-right: 0.4rem;
+      padding-left: 0.6rem;
+    }
+  }
+}
+
+
 
 .rskill .cskill:last-child {
   border-right: none;
@@ -179,14 +233,14 @@ header {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 968px) {
   .cskill {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border-color);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   .cskill {
     border-bottom: 0px solid var(--border-color);
     border-right: 1px solid var(--border-color);
@@ -246,6 +300,11 @@ footer {
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: var(--grad)
+}
+
+.container {
+ //max-width: 960px;
+ // margin: 0 auto;
 }
 footer .container,.row {
   margin-top: 0;
