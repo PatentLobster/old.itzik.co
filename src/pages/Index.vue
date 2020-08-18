@@ -8,6 +8,7 @@
   <div class="card">
     <h2><span>Its sick</span></h2>
       <div class="card-text">
+                  <TypeWriter/>
       <p>Hey My name is Itzik (Musli) Sokolov Paz I'm a Computer science student @ The open university of Israel.</p>
         <p>My skills are broad; from hardware to software, from the front end to the back end, from UX to UI, from idea to reality. 😉</p>
       </div>
@@ -67,7 +68,7 @@
               <i class="fa fa-youtube"></i>
           </a>
 
-          <a href="https://www.youtube.com/channel/UCYZDGnKU0vRA0-8q9sFG3ug" title="hack the box" alt="hack the box" class="yt">
+          <a href="https://www.hackthebox.eu/home/users/profile/127846" title="hack the box" alt="hack the box" class="yt">
               <i class="fa fa-cube"></i>
           </a>
       </div>
@@ -136,11 +137,12 @@
 
 <script>
     import CoolTable from "../components/CoolTable";
-
+    import TypeWriter from "../components/TypeWriter";
     export default {
         name: "Demo",
         components: {
-            CoolTable
+            CoolTable,
+            TypeWriter
         }
     }
 </script>

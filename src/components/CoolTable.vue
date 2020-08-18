@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div class="row rskill">
+    <div class="row mb-5 mt-5 rskill">
         <div class="col-lg-4 col-md-12 cskill">
             <i class="iskill fa fa-code"></i>
             <h3 class="hskill"> Dev Skills </h3>
