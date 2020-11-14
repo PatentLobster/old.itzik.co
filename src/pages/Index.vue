@@ -86,6 +86,7 @@
                     <li class="liskill">Java</li>
                     <li class="liskill">C</li>
                     <li class="liskill">C++</li>
+                    <li class="liskill">Rust</li>
                     <li class="liskill">CSS3</li>
                     <li class="liskill">Sass</li>
                     <li class="liskill">JS</li>
