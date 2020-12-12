@@ -63,6 +63,7 @@ export default {
     top: 2px;
     right: 0;
     padding: 1rem;
+    z-index: 999;
   }
 
   .toggle-theme {
