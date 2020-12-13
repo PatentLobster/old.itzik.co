@@ -35,6 +35,14 @@ module.exports = {
         theme_color: "#FFFFFF",
         lang: "en",
       }
-    }
+    },
+    {
+      use: 'gridsome-plugin-gtag',
+      options: {
+        config: {
+          id: process.env.GOOGLE_ANALYTICS_ID,
+        },
+      },
+    },
   ]
 };

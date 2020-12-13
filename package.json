@@ -12,6 +12,7 @@
     "@gridsome/vue-remark": "^0.2.1",
     "animate.css": "^4.1.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-gtag": "^0.1.10",
     "sharp": "^0.26.2"
   },
   "devDependencies": {
