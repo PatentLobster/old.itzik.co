@@ -13,7 +13,7 @@
     "animate.css": "^4.1.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtag": "^0.1.10",
-    "sharp": "^0.26.2"
+    "sharp": "^0.27.0"
   },
   "devDependencies": {
     "@gridsome/transformer-remark": "^0.6.0",
