@@ -77,6 +77,9 @@ export default {
     };
   },
   methods: {
+    mounted() {
+      throw 'testing Sentry connection';
+    },
     // submit form handler
     submit: function() {
       this.submitted = true;

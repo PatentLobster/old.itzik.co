@@ -23,6 +23,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+          SENTTRY_DSN: ${{ secrets.SENTTRY_DSN }}
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: dist

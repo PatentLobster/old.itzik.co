@@ -5,6 +5,11 @@ import DefaultLayout from '~/layouts/Default.vue'
 import * as Sentry from "@sentry/vue";
 
 export default function (Vue, {router, head, isClient}) {
+    Sentry.init({
+        Vue: Vue,
+        dsn: "https://f423a039018c4ef18664f47d0271d68d@o543602.ingest.sentry.io/5664481",
+    });
+
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
 

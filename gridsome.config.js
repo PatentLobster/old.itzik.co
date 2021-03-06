@@ -44,13 +44,6 @@ module.exports = {
         },
       },
     },
-    {
-      use: 'gridsome-plugin-sentry',
-      options: {
-        dsn: process.env.SENTTRY_DSN,
-        attachProps: true, // defaults to true
-        logErrors: true // defaults to false, see below for further info
-      }
-    }
+
   ]
 };
