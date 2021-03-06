@@ -2,6 +2,7 @@
 import './assets/style/index.scss'
 
 import DefaultLayout from '~/layouts/Default.vue'
+import * as Sentry from "@sentry/vue";
 
 export default function (Vue, {router, head, isClient}) {
     // Set default layout as a global component
