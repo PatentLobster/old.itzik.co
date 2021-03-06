@@ -3,11 +3,17 @@ import './assets/style/index.scss'
 
 import DefaultLayout from '~/layouts/Default.vue'
 import * as Sentry from "@sentry/vue";
+import { Integrations } from "@sentry/tracing";
 
 export default function (Vue, {router, head, isClient}) {
     Sentry.init({
         Vue: Vue,
         dsn: "https://f423a039018c4ef18664f47d0271d68d@o543602.ingest.sentry.io/5664481",
+        integrations: [new Integrations.BrowserTracing()],
+        tracesSampleRate: 1.0,
+        tracingOptions: {
+            trackComponents: true,
+        },
     });
 
     // Set default layout as a global component
