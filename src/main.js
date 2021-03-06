@@ -43,4 +43,10 @@ export default function (Vue, {router, head, isClient}) {
         href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css',
     });
 
+    router.beforeEach((to, from, next) => {
+        // Do stuff before next page load
+        Sentry.configureScope(scope => scope.setTransactionName(`${from.name} | ${from.path} -> ${to.path}`));
+        next()
+    })
+
 }
