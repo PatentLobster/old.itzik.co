@@ -1,6 +1,7 @@
 .idea/
 # ETC
 */.temp/
+.DS_Store
 
 # Logs
 logs
