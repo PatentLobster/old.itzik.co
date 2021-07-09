@@ -1,6 +1,6 @@
 <template>
     <div class="penguin">
-        <g-image src="@/assets/img/penguin.gif" :style="style"></g-image>
+        <g-image src="@/assets/img/penguin.gif" :style="style" alt="Penguin"></g-image>
     </div>
 </template>
 
