@@ -1,0 +1,9 @@
+ {
+        "background_color": "#131418",
+        "icon_path": "/ico.png",
+        "name": "Itzik.co",
+        "short_name": "Itzik",
+        "theme_color": "#FFFFFF",
+        "lang": "en",
+        "start_url": "itzik.co/"
+ }
