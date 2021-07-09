@@ -12,7 +12,10 @@
     >
 
       <div class="error-message">
-        <p v-show="!email.valid && email.value !== ''">Oh, please enter a valid email address.</p>
+        <p v-show="!email.focus &&
+                  !email.valid &&
+                  email.value !== ''">
+          Oh, please enter a valid email address.</p>
       </div>
 
       <fieldset>
@@ -24,8 +27,11 @@
         <div>
           <label class="label" for="email">Email</label>
           <input type="email" name="email" id="email" required=""
-                 :class="{ email , error: !email.valid }"
-                 v-model="email.value">
+                 :class="{ email , error: (!email.valid && email.value), valid: (email.valid && email.value)}"
+                 v-model="email.value"
+                 @focus="email.focus = true"
+                 @blur="email.focus = false"
+          />
         </div>
         <div>
 
@@ -55,7 +61,7 @@
 </template>
 
 <script>
-  const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  const emailRegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 export default {
   metaInfo: {
     title: 'Contact Me.',
@@ -66,7 +72,8 @@ export default {
       name: "",
       email: {
         value: "",
-        valid: false
+        valid: false,
+        focus: false,
       },
       message: {
         text: ``,
@@ -116,7 +123,7 @@ export default {
 
     }
 
-    .debug, code {
+    .debug, code, pre {
       display: none;
     }
   }
@@ -350,6 +357,9 @@ export default {
   .vue-form .error {
     border-color: #e94b35 !important;
   }
+  .vue-form .valid {
+    border-color: #a4e935 !important;
+  }
   .vue-form .counter {
     /*background-color: #ecf0f1;*/
     background-color: var(--bg-teritary);
@@ -379,6 +389,8 @@ export default {
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
     white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   @-webkit-keyframes cd-bounce {
