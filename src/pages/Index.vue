@@ -157,7 +157,7 @@
     </div>
 
     <div class="card stinker vork">
-      <h2><span>Vork</span></h2>
+      <h2 ><span>Vork</span></h2>
       <div class="card-text">
         <p> Vork is a calendar application that logs every login and logout of the computer using electron API and stores it to lightweight Nedb json. Every time you login the application will greet you with a random quote.
         </p>
