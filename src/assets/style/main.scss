@@ -68,39 +68,38 @@ header {
 }
 
 @for $i from 1 through 8 {
-  .card:nth-child(#{$i}n) {
+  .grid .card:nth-child(#{$i}n) {
     top: $i * 40px !important;
     //position: sticky;
   }
 }
 
 @for $i from 1 through 8 {
-  .card:nth-child(#{$i}n) {
+  .grid .card:nth-child(#{$i}n) {
     h2 {
       padding-left: $i * 10%;
     }
   }
 }
 
-.card:nth-child(2) {
+.grid .card:nth-child(1) {
+  background: linear-gradient(#041830, #080117) !important;
+  color: white !important;
+}
+.grid .card:nth-child(2) {
   background: linear-gradient(90deg, #41b782, #86d169) !important;
 }
 
-.card:nth-child(3) {
+.grid .card:nth-child(3) {
   //background: linear-gradient(#8269be,#835ec2)!important;
   //background:linear-gradient(#47133c, #4e1277)!important;
   background: linear-gradient(#a4508b 0%, #5f0a87 74%) !important;
   color: white !important;
 }
 
-.card:nth-child(1) {
-  background: linear-gradient(#041830, #080117) !important;
-  color: white !important;
-}
 
 .grid {
   margin-bottom: 2rem;
-  padding-bottom: 5rem;
 }
 
 // Find Me on:
@@ -405,7 +404,7 @@ footer .container, .row {
 }
 
 @media only screen and (min-width: 968px) {
-  .card-text {
+  .stinker .card-text {
     width: 45%;
   }
 }
@@ -419,7 +418,7 @@ footer .container, .row {
 
 .card-links {
   display: flex-root;
-  /*gap: 2.5rem;*/
+  text-align: center;
 }
 
 .card-links a {
@@ -456,4 +455,58 @@ footer .container, .row {
 
 .card-text p {
   flex-direction: column;
+}
+
+.card-screenshot {
+  border-radius: 25px;
+  height: -webkit-fill-available;
+  min-height: 100%;
+  width: 45%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  object-fit: contain;
+  z-index: -1;
+  overflow: hidden hidden;
+}
+
+.card-screenshot img{
+  height: auto;
+  width: auto;
+  //max-height: 55vh;
+  object-fit: cover;
+  //max-width: 50%;
+}
+
+
+.card,.stinker {
+  background: linear-gradient(#34485f, #141824) !important;
+  display: grid;
+  color: white !important;
+  text-align: left;
+  margin-bottom: 3.5rem;
+}
+.vork {
+  background: linear-gradient(90deg, #41b782, #86d169) !important;
+}
+
+.vork .card-screenshot img {
+  float: left;
+  height: inherit;
+  border-radius: 20px;
+}
+
+.stinker .card-text {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stinker .card-text{
+    max-width: 100%;
+  }
+
+  .stinker .card-screenshot {
+    display: none;
+  }
 }

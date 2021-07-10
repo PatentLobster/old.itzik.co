@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm text-left viewn">
-                    <g-link href="https://github.com/PatentLobster/itzik.co">
+                    <g-link href="https://github.com/PatentLobster">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50px" viewBox="0 0 1024 1024" class="git"
                              fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
