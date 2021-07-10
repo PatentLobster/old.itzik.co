@@ -88,6 +88,8 @@ header {
 }
 .grid .card:nth-child(2) {
   background: linear-gradient(90deg, #41b782, #86d169) !important;
+  color: #1f1c28 !important;
+
 }
 
 .grid .card:nth-child(3) {
@@ -489,10 +491,11 @@ footer .container, .row {
 }
 .vork {
   background: linear-gradient(90deg, #41b782, #86d169) !important;
+  color: #1f1c28 !important;
 }
 
 .vork .card-screenshot img {
-  float: left;
+  float: right;
   height: inherit;
   border-radius: 20px;
 }
