@@ -16,7 +16,7 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-gtag": "^0.1.10",
     "gridsome-plugin-sentry": "^1.1.0",
-    "sharp": "^0.29.1"
+    "sharp": "^0.29.2"
   },
   "devDependencies": {
     "@gridsome/transformer-remark": "^0.6.0",
